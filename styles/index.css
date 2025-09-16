@@ -1,0 +1,404 @@
+/* Custom CSS for Agro Pet Inácio */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.contact-bar {
+    font-size: 0.875rem;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.paw-icon {
+    font-size: 1.5rem;
+}
+
+/* Ajuste só para mobile */
+@media (max-width: 767.98px) {
+  .address-mobile {
+    background: #fff3cd; /* leve destaque (amarelo claro) */
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #333 !important;
+  }
+
+  .address-mobile i {
+    color: #dc3545; /* ícone vermelho para dar contraste */
+  }
+}
+
+/* Hero Section */
+.hero-section {
+    background: white;
+    min-height: 500px;
+}
+
+.decoration-circle {
+    width: 16rem;
+    height: 16rem;
+    background: #ffc107;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.decoration-circle-small {
+    width: 12rem;
+    height: 12rem;
+    background: #ffb30f;
+    border-radius: 50%;
+    transform: translate(25%, 25%);
+    z-index: 1;
+}
+
+.hero-logo-container {
+    z-index: 10;
+}
+
+.logo-circle {
+    width: 20rem;
+    height: 20rem;
+    background: white !important;
+    border: 4px solid #ffc107 !important;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pet-emoji {
+    font-size: 2.5rem;
+}
+
+.text-warning-light {
+    color: #ffe066 !important;
+}
+
+.dove-decoration {
+    top: 1rem;
+    right: 1rem;
+}
+
+.dove-emoji {
+    font-size: 2.5rem;
+    color: #e0e0e0;
+}
+
+/* Service Cards */
+.service-card {
+    background: #fefefe !important;
+    border: 2px solid #ffc107 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 3rem;
+    height: 3rem;
+    background: #ffc107 !important;
+}
+
+/* Products Section */
+.products-section {
+    background: #f8f9fa !important;
+}
+
+.paw-decoration {
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+}
+
+.paw-large {
+    font-size: 4rem;
+    color: #66b3ff;
+    opacity: 0.3;
+}
+
+.orange-circle {
+    width: 4rem;
+    height: 4rem;
+    background: #ffb30f !important;
+}
+
+.product-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 300px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-image img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.gradient-blue {
+    background: linear-gradient(to top, #3b82f6, #8b5cf6);
+}
+
+.gradient-orange {
+    background: linear-gradient(to top, #f97316, #ef4444);
+}
+
+.gradient-dark {
+    background: linear-gradient(to top, #374151, #111827);
+}
+
+.gradient-green {
+    background: linear-gradient(to top, #10b981, #eab308);
+}
+
+.product-content {
+    z-index: 3;
+}
+
+.hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 4;
+}
+
+.product-card:hover .hover-overlay {
+    opacity: 1;
+}
+
+/* News Section */
+.news-section {
+    position: relative;
+}
+
+.decoration-elements .blue-bar {
+    top: 2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 1rem;
+    background: #66b3ff;
+    border-radius: 50px;
+    transform: rotate(12deg);
+}
+
+.decoration-elements .scissors-emoji {
+    top: 4rem;
+    right: 4rem;
+    font-size: 2.5rem;
+    color: #ff69b4;
+    opacity: 0.7;
+}
+
+.decoration-elements .paw-orange {
+    bottom: 4rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: #ffa500;
+    opacity: 0.7;
+}
+
+.decoration-elements .paw-purple {
+    bottom: 2rem;
+    left: 4rem;
+    font-size: 2.5rem;
+    color: #9966cc;
+    opacity: 0.7;
+}
+
+.news-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.news-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-img {
+    transform: scale(1.05);
+}
+
+.news-hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.news-card:hover .news-hover-overlay {
+    opacity: 1;
+}
+
+.news-content h5 {
+    transition: color 0.3s ease;
+}
+
+.news-card:hover .news-content h5 {
+    color: #0d6efd !important;
+}
+
+/* Footer */
+.footer-section {
+    position: relative;
+}
+
+.footer-decoration-left {
+    width: 12rem;
+    height: 12rem;
+    background: #ffc107;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+}
+
+.footer-decoration-right {
+    width: 8rem;
+    height: 8rem;
+    background: #ffb30f;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+.paw-footer {
+    font-size: 1.5rem;
+}
+
+.social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    background-color: #495057 !important;
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .pet-emoji {
+        font-size: 2rem;
+    }
+
+    .decoration-circle,
+    .decoration-circle-small {
+        display: none;
+    }
+
+    .contact-bar .d-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem !important;
+    }
+
+    .service-cards {
+        margin-top: 2rem;
+    }
+
+    .decoration-elements span {
+        display: none;
+    }
+
+    .footer-decoration-left,
+    .footer-decoration-right {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-circle {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .pet-emoji {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom button hover effects */
+.btn-danger:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Loading animation for images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+/* Focus styles for accessibility */
+.product-card:focus,
+.news-card:focus,
+.social-link:focus {
+    outline: 2px solid #ffc107;
+    outline-offset: 2px;
+}
